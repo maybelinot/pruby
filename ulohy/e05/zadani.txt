@@ -13,18 +13,18 @@ Then implement class `DebugTransmitter` that will also define method
 `puts`. In this case however, it will print both length of the object
 and then result of `inspect` method called on the argument.
 
-Try, that this method `transmit` of the class `MorseCode` works with
+Try, that this method `transmit` of the class `MorseCoder` works with
 instances of both transmitter classes. Check on the difference when
 calling the `transmit` method with empty string.
 
-Put check into the initializer of `MorseCode` that the `transmitter`
+Put check into the initializer of `MorseCoder` that the `transmitter`
 implements method `puts`. If it doesn't it will print a warning.
 
-Then, implement an interfaces on a class `MorseCode` using
+Then, implement an interfaces on a class `MorseCoder` using
 `method_missing`, so that calling a single character method will
 return Morse code of that character, e. g:
 
-    coder = MorseCode.new('|', StandardTransmitter)
+    coder = MorseCoder.new('|', StandardTransmitter)
     coder.a # => '.-'
     coder.b # => '-...'
 
@@ -51,16 +51,16 @@ Poté implementujte vlastní třídu DebugTransmitter, také s metodou puts, kte
 vytiskne jednak délku zadaného argumentu a poté argument samotný avšak upravený metodou
 inspect.
 
-Vyzkoušejte, že metoda transmit třídy MorseCode funguje s instancemi obou transmitterů.
+Vyzkoušejte, že metoda transmit třídy MorseCoder funguje s instancemi obou transmitterů.
 Vyzkoušejte jak se výstup liší pro transmit prázdného stringu u obou Transmitterů.
 Přidejte do konstruktoru kontrolu, že zadaný transmitter implementuje metodu puts.
 Pokud ji nedefinuje, vypište varování.
 
-Dále implementujte pomocí method_missing na třídě MorseCode rozhraní tak, aby volání
+Dále implementujte pomocí method_missing na třídě MorseCoder rozhraní tak, aby volání
 metody s názvem jednoho písmenka abecedy vrátilo dané písmenko zakódované, tedy
 např.
 
-    coder = MorseCode.new('|', StandardTransmitter)
+    coder = MorseCoder.new('|', StandardTransmitter)
     coder.a # => '.-'
     coder.b # => '-...'
 

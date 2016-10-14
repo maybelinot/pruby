@@ -1,9 +1,28 @@
+Define your own exception `MorseCoder::InvalidTransmitter` and raise
+it in the `MorseCoder` class from the task E05, if the given
+`transmitter` doesn't implement method `puts`.
+
+Create a script, that will read file `morse_input.txt` and run its
+content though the `MorseCoder` using `DebugTransmitter`. Update then
+the script so that the input file will be given as a first argument
+passed on the script in command line. If no file is given, it will use
+`more_input.txt` as a default.
+
+Create a script that will use a file handler of opened
+`morse_output.txt` as a `transmitter` and it will write the encoded
+text into the same file. Make sure to open the file for writing. The
+method `transmit` should be able to handle the state when the file is
+opened for read-only and it should print an adequate message.
+
+
+############################################################################################
+
 Definujte vlastní výjimku MorseCoder::InvalidTransmitter a ve třídě MorseCoder
 z páté úlohy v konstruktoru ji vyhoďte, pokud zadaný transmitter neimplementuje
 metodu puts.
 
 Vytvořte skript, který přečte soubor morse_input.txt a jeho obsah 
-přeneste pomocí MorseCode a DebugTransmitteru. Poté skript upravte tak,
+přeneste pomocí MorseCoder a DebugTransmitteru. Poté skript upravte tak,
 aby jako vstupní soubor použil soubor zadaný jako první parametr při spuštění,
 pokud žádny parametr zadán není, pak použije 'morse_input.txt'.
 

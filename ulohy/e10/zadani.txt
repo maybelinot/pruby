@@ -1,5 +1,5 @@
 Napište unit testy na třídy, které jste vytvořili, tedy
-MorseCode, MorseServer, Bike.
+MorseCoder, MorseServer, Bike.
 
 Dále napište testy pro třídu DiskFormatter kterou najdete v souboru
 disk_formatter.rb. Otestujte vše co vás napadne.
