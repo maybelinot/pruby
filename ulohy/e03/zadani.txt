@@ -20,13 +20,13 @@ arguments - color and size of wheels with default value of 26.
 
 Class will have a register of all bikes that were created. Each bike will start with current
 gears 1 and 1. It should also have methods front_gear_up! and front_gear_down! which changes
-current gears up and down (respecting maximum and minumum). Also define methods for rear gear.
+current gears up and down (respecting maximum and minimum). Also define methods for rear gear.
 
 Then define methods:
 * current_gear - outputs string representation of current gear configuration, e.g. "2x7"
 * go! - runs for a distance that get evaluated as multiplication of gears and size of a wheel / 10 (e.g. 2.6)
-* distance - the dostance that the bike already ran, default value of each bike is 0
-* action - randomly choose one of following actions ront_gear_up! front_gear_down! rear_gear_up! rear_gear_down! go!
+* distance - the distance that the bike already ran, default value of each bike is 0
+* action - randomly choose one of following actions front_gear_up! front_gear_down! rear_gear_up! rear_gear_down! go!
 with probability 10%, only go will have 60%
 
 You might find rand(n) method useful, it returns number from 0 to n-1
